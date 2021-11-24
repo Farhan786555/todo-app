@@ -1,2 +1,2 @@
-# todo-app-starter
+# Todo App Starter
  Starter base template
