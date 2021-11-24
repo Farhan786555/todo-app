@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Task App</title>
+</head>
+<body>
+    <main id="blur">
+        <header class="navigation">
+            <h3>Sticky Notes</h3>
+            <button onclick="toggle()" class="add-note">New Note</button>
+        </header>
+
+        <section class="notes-grid">
+
+            <div class="notes-card">
+                <button onclick="editNote()" class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Firebase 9 Tutorial Crash Course</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+
+            <div class="notes-card">
+                <button class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Getting Started With Middleman</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+
+            <div class="notes-card">
+                <button class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Top 50+ AWS Services Explained</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+
+            <div class="notes-card">
+                <button class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Learning NUXT JS By Example</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+
+            <div class="notes-card">
+                <button class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Build Your Own Saas App with Firebase</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+
+            <div class="notes-card">
+                <button class="badge"><span class="material-icons">mode</span></button>
+                <h2 class="notes-title">Vue JS 3 And Firebase Crash Course</h2>
+                <p class="notes-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores harum possimus rerum labore aut eveniet provident sequi earum quo neque dolorum, repudiandae iusto nulla a necessitatibus sint consequuntur, omnis facilis. Iusto alias placeat porro odio accusantium, similique fugiat quasi.</p>
+            </div>
+     
+
+        </section>
+    </main>
+
+    <div id="popup">
+        <h3>Add New Note</h3>
+        <form>
+            <div class="add-title">
+                <label for="title">Title :</label>
+                <input type="text">
+                <label for="notes">Notes :</label>
+                <textarea name="" id="" cols="30" rows="8"></textarea>
+            </div>
+            
+        </form>
+        <button onclick="toggle()" class="close">Add Note</button>
+        <button onclick="toggle()" class="close">Cancel</button>
+    </div>
+
+    <div class="notes-update" id="update">
+        <h3>Edit Note</h3>
+        <form>
+            <div class="add-title">
+                <label for="title">Title :</label>
+                <input type="text">
+                <label for="notes">Notes :</label>
+                <textarea name="" id="" cols="30" rows="8"></textarea>
+            </div>
+            
+        </form>
+        <button onclick="editNote()" class="close">Update</button>
+        <button class="notes-delete">Delete</button>
+        <button onclick="cancelUpdate()" class="close">Cancel</button>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
